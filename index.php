@@ -23,19 +23,19 @@
             </div>
 
             <div class="nav-link">
-                <a href="dogs.html">Dogs</a>
+                <a href="Aboutus.php">About us page</a>
             </div>
 
             <div class="nav-link">
-                <a href="birds.html">Birds</a>
+                <a href="Category.php">Category Page</a>
             </div>
 
             <div class="nav-link">
-                <a href="rabbits.html">Rabbits</a>
+                <a href="Product.php">Product Page</a>
             </div>
 
             <div class="nav-link">
-                <a href="cats.html">Cats</a>
+                <a href="Invoice.php">Invoice Page</a>
             </div>
         </div>
 
@@ -53,7 +53,7 @@
         </div>
 
 <!-- The body which contains images of aninamls which link to their pages -->
-        <a href="dogs.html">
+        <a href="Aboutus.php">
         <div class="portfolio-wrapper">
             <div class="portfolio-img-background" style="background-image: url('Images/Pictures/Dog.jpg')" >
 
@@ -69,7 +69,7 @@
         </div>
         </a>
 
-        <a href="birds.html">
+        <a href="Category.php">
             <div class="portfolio-wrapper">
                 <div class="portfolio-img-background" style="background-image: url('Images/Pictures/bird.jpg')">
 
@@ -84,7 +84,7 @@
     </div>
     </div>
 
-    <a href="rabbits.html">
+    <a href="Product.php">
         <div class="portfolio-wrapper">
             <div class="portfolio-img-background" style="background-image: url('Images/Pictures/rabbit.jpg')">
 
@@ -97,7 +97,7 @@
         </div>
     </a>
 
-    <a href="cats.html">
+    <a href="Invoice.php">
         <div class="portfolio-wrapper">
             <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat.jpg')">
 
