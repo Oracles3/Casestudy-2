@@ -163,7 +163,7 @@ p {
 }
 
 .slideshow{
-    width: 80%;
+    width: 50%;
     max-height: 600px;
     object-fit: cover;
     margin-left: 10%;
