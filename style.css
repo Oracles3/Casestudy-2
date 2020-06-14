@@ -158,5 +158,6 @@ footer {
     margin-left: 15%;
 }
 
-
-
+p {
+    text-align: center;
+}
