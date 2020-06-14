@@ -105,10 +105,13 @@ body {
 
 /* Footer Styles */
 footer {
-    background: #333333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
     color: white;
-    padding: 2em;
-    margin-bottom: auto;
+    text-align: center;
 }
 
 /* Announcement bar Styles */
