@@ -51,6 +51,8 @@
 echo "<p>This is a online website which provides animal food products with easy access</p>";
 ?>
 
+    <img class = "slideshow" name = "slide" alt="Slide">
+
 <!-- Footer Coding -->
 <?php include ('Footer.php') ?>
 

@@ -161,3 +161,10 @@ footer {
 p {
     text-align: center;
 }
+
+.slideshow{
+    width: 80%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-left: 10%;
+}
