@@ -106,7 +106,7 @@ body {
 
 /* Footer Styles */
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -166,7 +166,7 @@ footer {
     float: right;
     padding: 10px;
     font-weight: 600;
-    font-family: Calibri, sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     color: whitesmoke;
     margin-top: 3%;
