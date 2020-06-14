@@ -101,6 +101,7 @@ body {
 /* Logo Styles */
 .Logo {
     float: right;
+    position: relative;
 }
 
 /* Footer Styles */
