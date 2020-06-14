@@ -60,7 +60,7 @@
         </td>
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp2.png">
+            <img class = "pimage" src="Images/Pictures/dog food2.png">
             <div class="add">
                 <p class = "atc">$30 - Hills</p>
                 <button id = "ecs2" class="atcb2" onclick="addProductToCart(this.id)">+</button>
@@ -68,7 +68,7 @@
         </td>
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp3.png">
+            <img class = "pimage" src="Images/Pictures/cat food1.png">
             <div class="add">
                 <p class = "atc">$30 - Hills</p>
                 <button class="atcb3" id = "ecs3" onclick="addProductToCart(this.id)">+</button>
@@ -78,7 +78,7 @@
     <tr class="tr">
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp4.png">
+            <img class = "pimage" src="Images/Pictures/cat food1.png">
             <div class="add">
                 <p class = "atc">$30 - Eukanuba</p>
                 <button id = "lsd1" onclick="addProductToCart(this.id)" class="atcb4">+</button>
@@ -86,7 +86,7 @@
         </td>
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp5.png">
+            <img class = "pimage" src="Images/Pictures/bird food1.png">
             <div class="add">
                 <p class = "atc">$30 - Black Hawk</p>
                 <button id = "lsd2" onclick="addProductToCart(this.id)" class="atcb5">+</button>
@@ -94,7 +94,7 @@
         </td>
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp6.png">
+            <img class = "pimage" src="Images/Pictures/bird food2.png">
             <div class="add">
                 <p class = "atc">$30 - Royal Canin</p>
                 <button id = "lsd3" onclick="addProductToCart(this.id)" class="atcb6">+</button>
@@ -104,7 +104,7 @@
     <tr class="tr">
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp7.png">
+            <img class = "pimage" src="Images/Pictures/rabbit food1.png">
             <div class="add">
                 <p class = "atc">$30 - Pedigree</p>
                 <button id = "xan1" onclick="addProductToCart(this.id)" class="atcb7">+</button>
@@ -112,22 +112,12 @@
         </td>
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp8.png">
+            <img class = "pimage" src="Images/Pictures/rabbit food2.png>
             <div class="add">
                 <p class = "atc">$30 - Purina</p>
                 <button id = "xan2" onclick="addProductToCart(this.id)" class="atcb8">+</button>
             </div>
         </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp9.png">
-            <div class="add">
-                <p class = "atc">$30 - K9Natural</p>
-                <button id = "xan3" onclick="addProductToCart(this.id)" class="atcb9">+</button>
-            </div>
-        </td>
-    </tr>
-</table>
 
 <footer>
     <?php include ('Footer.php') ?>
