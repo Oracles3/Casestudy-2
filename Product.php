@@ -37,11 +37,6 @@
                 <a href="Invoice.php">Cats</a>
             </div>
 
-            <div class="nav-link">
-                <a href="cart.html">Cart</a>
-            </div>
-        </div>
-
         <!-- Brand Logo with the shops name -->
         <div class="right">
             <div class="brand">
@@ -57,7 +52,7 @@
     <tr class="tr">
         <td class="pb">
             <p class="pheader"></p>
-            <img class = "pimage" src="photos/pp1.png">
+            <img class = "pimage" src="Images/Pictures/dog%20food1.png" alt="Dog Food">
             <div class="add">
                 <p class = "atc">$30 - Pedigree</p>
                 <button id = "ecs1" class="atcb1" onclick="addProductToCart(this.id)">+</button>
