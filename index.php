@@ -23,19 +23,19 @@
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">About us page</a>
+                <a href="Aboutus.php">About us</a>
             </div>
 
             <div class="nav-link">
-                <a href="Category.php">Category Page</a>
+                <a href="Category.php">Category</a>
             </div>
 
             <div class="nav-link">
-                <a href="Product.php">Product Page</a>
+                <a href="Product.php">Product</a>
             </div>
 
             <div class="nav-link">
-                <a href="Invoice.php">Invoice Page</a>
+                <a href="Invoice.php">Invoice</a>
             </div>
         </div>
 
@@ -61,7 +61,7 @@
 
                     <div class="subtitle">
                         <div class="shop">
-                        Shop for your Dog
+                        About Us
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
 
                     <div class="img-text-wrapper">
                         <div class="subtitle">
-                            Shop for your Bird
+                            Category
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
 
                 <div class="img-text-wrapper" style="height: 100%">
                     <div class="subtitle">
-                        Shop for your Rabbit
+                        Products
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Shop for your Cat
+                        Portfolio
                     </div>
                 </div>
             </div>
