@@ -22,90 +22,78 @@
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">Dogs</a>
+                <a href="Aboutus.php">About us</a>
             </div>
 
             <div class="nav-link active-nav-link">
-                <a href="Category.php">Birds</a>
+                <a href="Category.php">Categorys</a>
             </div>
 
             <div class="nav-link">
-                <a href="Product.php">Rabbits</a>
+                <a href="Product.php">Products</a>
             </div>
 
             <div class="nav-link ">
-                <a href="Invoice.php">Cats</a>
+                <a href="Invoice.php">Invoice</a>
             </div>
 
-            <div class="nav-link">
-                <a href="cart.html">Cart</a>
-            </div>
-        </div>
+            <!-- Brand Logo with the shops name -->
 
-        <!-- Brand Logo with the shops name -->
-        <div class="right">
             <div class="brand">
                 <img class="Logo" src="Images/Pictures/logo.png" alt="Logo">
-                <div>PET FOOD STORE</div>
             </div>
         </div>
     </div>
 </div>
 
-<<!-- Bird product coding -->
-<div id = "middle">
-    <div class="product">
-        <p><img src="Images/Pictures/bird food1.png" alt="Bird food"></p>
-        <p>Price: $2</p>
-        <p>
-            <label for="SeedmixQty"></label><input placeholder="qty" type="number" id = "SeedmixQty">
-            <button id = "addSeedmix" onclick="addProductToCart(this.id)">Add to cart</button>
-        </p>
-    </div>
-    <div class="product">
-        <p><img src="Images/Pictures/bird food2.png" alt="Bird Food"></p>
-        <p>Price: $3</p>
-        <p>
-            <label for="EnergypelletQty"></label><input placeholder="qty" type="number" id = "EnergypelletQty">
-            <button id = "addEnergypellet" onclick="addProductToCart(this.id)">Add to cart</button>
-        </p>
-    </div>
-    <div class="product">
-        <p><img src="Images/Pictures/bird food3.png" alt="Bird Food"></p>
-        <p>Price: $3</p>
-        <p>
-            <label for="PelletberriesQty"></label><input placeholder="qty" type="number" id = "PelletberriesQty">
-            <button id = "addPelletverries" onclick="addProductToCart(this.id)">Add to cart</button>
-        </p>
-    </div>
 
-</div>
-
-<!-- Cart Coding -->
-<div class="cart">
-    <div id="rightDiv">
-        <h2>Cart</h2>
-        <button id ="checkOut" onclick="invoice()">Check out</button>
-    </div>
-
-
-    <!-- The Invoice -->
-    <div id="myModal" class="modal">
-
-        <!-- Invoice content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id = "invoicePlace">Invoice</div>
+<div class="portfolio-wrapper">
+    <div class="portfolio-img-background" style="background-image: url('Images/Pictures/dog 2.jpg')" >
+        <div class="img-text-wrapper">
+            <div class="subtitle">
+                <div class="shop">
+                    Dog Food
+                </div>
+            </div>
         </div>
-
     </div>
 </div>
 
-<footer>
-    <p>Assessment 2</p>
-    <p>Unitec</p>
-    <p>Created by Stephan Teaca-Jucan</p>
-</footer>
+
+<div class="portfolio-wrapper">
+    <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat 2.jpg')">
+        <div class="img-text-wrapper">
+            <div class="subtitle">
+                Cat Food
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="portfolio-wrapper">
+    <div class="portfolio-img-background" style="background-image: url('Images/Pictures/bird 2.jpg')">
+        <div class="img-text-wrapper" style="height: 100%">
+            <div class="subtitle">
+                Bird Food
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="portfolio-wrapper">
+    <div class="portfolio-img-background" style="background-image: url('Images/Pictures/rabbit 2.jpg')">
+        <div class="img-text-wrapper">
+            <div class="subtitle">
+                Rabbit Food
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php include ('Footer.php') ?>
 
 
 </body>
