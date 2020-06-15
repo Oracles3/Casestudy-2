@@ -43,7 +43,6 @@
         <div class="right">
             <div class="brand">
                 <img class="Logo" src="Images/Pictures/logo.png" alt="Logo">
-                <div>PET FOOD SHOP</div>
             </div>
         </div>
     </div>

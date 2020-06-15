@@ -102,9 +102,11 @@ body {
 
 /* Logo Styles */
 .Logo {
-    float: left;
+    float: right;
     position: relative;
+    left: 1100%;
 }
+
 
 /* Footer Styles */
 footer {
