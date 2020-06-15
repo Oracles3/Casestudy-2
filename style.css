@@ -102,9 +102,8 @@ body {
 
 /* Logo Styles */
 .Logo {
-    float: right;
+    float: left;
     position: relative;
-    left: 1100%;
 }
 
 
