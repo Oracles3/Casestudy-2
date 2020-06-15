@@ -2,6 +2,8 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -108,18 +110,19 @@ body {
 footer {
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 200%;
     width: 100%;
     background-color: #333333;
     color: white;
     text-align: center;
+    margin-top: auto;
 }
 
 /* Announcement bar Styles */
 .announcement-bar {
     text-align: center;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     background: crimson;
     color: white;
 }
@@ -153,6 +156,7 @@ footer {
     width: 80%;
     margin-left: 10%;
     height: 300px;
+    object-fit: contain;
 }
 
 .add{
@@ -162,7 +166,7 @@ footer {
 
 .atc{
     width: 78%;
-    background-color: #FFC300;
+    background-color: blue;
     float: right;
     padding: 10px;
     font-weight: 600;
@@ -174,7 +178,7 @@ footer {
 
 .atcb1, .atcb2, .atcb3, .atcb4, .atcb5, .atcb6, .atcb7, .atcb8, .atcb9{
     width: 14.41%;
-    background-color: #FFC300;
+    background-color: blue;
     padding: 10px;
     border: 0;
     height: 39px;
@@ -184,13 +188,111 @@ footer {
     margin-top: 3%;
 }
 
+
 /* Cart Style */
-.cart{
-    display: inline-block;
-    width: 10%;
-    margin-left: 15%;
+.cartnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.cartnav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Lato', sans-serif;
+    margin-left: -9%;
+}
+.cartnav .closecart {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.closecart{
+    z-index: 5;
 }
 
+.cart{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: transparent;
+    border: 0;
+
+}
+
+.cartTable{
+    width: 90%;
+    margin-left: 5%;
+}
+.cartRow{
+    width: 100%;
+    height: 50px;
+}
+.cartRow1{
+    width: 100%;
+    height: 10px;
+}
+.cartPrice{
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    width: 70%;
+    font-weight: 600;
+    margin-left: 30%;
+    color: Black;
+}
+.cartImg{
+    width: 30%;
+    margin-left: 0;
+}
+.cartImage{
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    object-fit: cover;
+}
+.total{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 155%;
+    height: 50px;
+}
+.totalRow{
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+.totalWriting{
+    width: 70%;
+    color: Black;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    text-align: right;
+}
+.totalPrice{
+    width: 30%;
+    color: Black;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    text-align: right;
+}
+
+/*Text Styling*/
 h1 {
     text-align: center;
 }

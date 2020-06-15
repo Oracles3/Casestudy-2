@@ -37,91 +37,115 @@
                 <a href="Invoice.php">Cats</a>
             </div>
 
-        <!-- Brand Logo with the shops name -->
-        <div class="right">
-            <div class="brand">
-                <img class="Logo" src="Images/Pictures/logo.png" alt="Logo">
-                <div>PET FOOD STORE</div>
+            <!-- Brand Logo with the shops name -->
+            <div class="right">
+                <div class="brand">
+                    <img class="Logo" src="Images/Pictures/logo.png" alt="Logo">
+                    <div>PET FOOD STORE</div>
+                </div>
             </div>
         </div>
     </div>
+
+    <<!-- Rabbit product coding -->
+    <table class="productHolder">
+        <tr class="tr">
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/dog%20food1.png" alt="Dog Food">
+                <div class="add">
+                    <p class = "atc">$30 - Pedigree</p>
+                    <button id = "dog1" class="atcb1" onclick="addProductToCart(this.id)">+</button>
+                </div>
+            </td>
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/dog food2.png" alt="Dog Food">
+                <div class="add">
+                    <p class = "atc">$30 - Family Dog</p>
+                    <button id = "dog2" class="atcb2" onclick="addProductToCart(this.id)">+</button>
+                </div>
+            </td>
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/cat food1.png" alt="Cat Food">
+                <div class="add">
+                    <p class = "atc">$30 - Hills</p>
+                    <button class="atcb3" id = "cat1" onclick="addProductToCart(this.id)">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr class="tr">
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/cat food2.png" alt="cat food">
+                <div class="add">
+                    <p class = "atc">$30 - Purina</p>
+                    <button id = "cat2" onclick="addProductToCart(this.id)" class="atcb4">+</button>
+                </div>
+            </td>
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/bird food1.png" alt="bird food">
+                <div class="add">
+                    <p class = "atc">$30 -  Vita Pet</p>
+                    <button id = "bird1" onclick="addProductToCart(this.id)" class="atcb5">+</button>
+                </div>
+            </td>
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/bird food2.png" alt="bird food">
+                <div class="add">
+                    <p class = "atc">$30 - Energy Pellets</p>
+                    <button id = "bird2" onclick="addProductToCart(this.id)" class="atcb6">+</button>
+                </div>
+            </td>
+        </tr>
+        <tr class="tr">
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/rabbit food1.png" alt="rabbit food">
+                <div class="add">
+                    <p class = "atc">$30 - Value</p>
+                    <button id = "rabbit1" onclick="addProductToCart(this.id)" class="atcb7">+</button>
+                </div>
+            </td>
+            <td class="pb">
+                <p class="pheader"></p>
+                <img class = "pimage" src="Images/Pictures/rabbit food2.png" alt="rabbit food">
+                <div class="add">
+                    <p class = "atc">$30 - KayTee</p>
+                    <button id = "rabbit2" onclick="addProductToCart(this.id)" class="atcb8">+</button>
+                </div>
+    </table>
 </div>
 
-<<!-- Rabbit product coding -->
-<table class="productHolder">
-    <tr class="tr">
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/dog%20food1.png" alt="Dog Food">
-            <div class="add">
-                <p class = "atc">$30 - Pedigree</p>
-                <button id = "ecs1" class="atcb1" onclick="addProductToCart(this.id)">+</button>
-            </div>
-        </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/dog food2.png">
-            <div class="add">
-                <p class = "atc">$30 - Hills</p>
-                <button id = "ecs2" class="atcb2" onclick="addProductToCart(this.id)">+</button>
-            </div>
-        </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/cat food1.png">
-            <div class="add">
-                <p class = "atc">$30 - Hills</p>
-                <button class="atcb3" id = "ecs3" onclick="addProductToCart(this.id)">+</button>
-            </div>
-        </td>
-    </tr>
-    <tr class="tr">
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/cat food1.png">
-            <div class="add">
-                <p class = "atc">$30 - Eukanuba</p>
-                <button id = "lsd1" onclick="addProductToCart(this.id)" class="atcb4">+</button>
-            </div>
-        </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/bird food1.png">
-            <div class="add">
-                <p class = "atc">$30 - Black Hawk</p>
-                <button id = "lsd2" onclick="addProductToCart(this.id)" class="atcb5">+</button>
-            </div>
-        </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/bird food2.png">
-            <div class="add">
-                <p class = "atc">$30 - Royal Canin</p>
-                <button id = "lsd3" onclick="addProductToCart(this.id)" class="atcb6">+</button>
-            </div>
-        </td>
-    </tr>
-    <tr class="tr">
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/rabbit food1.png">
-            <div class="add">
-                <p class = "atc">$30 - Pedigree</p>
-                <button id = "xan1" onclick="addProductToCart(this.id)" class="atcb7">+</button>
-            </div>
-        </td>
-        <td class="pb">
-            <p class="pheader"></p>
-            <img class = "pimage" src="Images/Pictures/rabbit food2.png>
-            <div class="add">
-                <p class = "atc">$30 - Purina</p>
-                <button id = "xan2" onclick="addProductToCart(this.id)" class="atcb8">+</button>
-            </div>
-        </td>
+
+<<div id="cartnav" class="cartnav">
+    <a href="javascript:void(0)" class="closecart" onclick="closeCart()">&times;</a>
+    <a href = "#">Your Cart</a>
+    <table class="cartTable" id = "cart1"></table>
+    <table class="cartTable" id = "cart2"></table>
+    <table class="cartTable" id = "cart3"></table>
+    <table class="cartTable" id = "cart4"></table>
+    <table class="cartTable" id = "cart5"></table>
+    <table class="cartTable" id = "cart6"></table>
+    <table class="cartTable" id = "cart7"></table>
+    <table class="cartTable" id = "cart8"></table>
+    <table class = "total">
+        <tr class="totalRow">
+            <td class="totalWriting">TOTAL:</td>
+            <td class="totalPrice" id = "total">$0.00</td>
+        </tr>
+    </table>
+</div>
+
+<button onclick="openCart()" class = "cart"><img class = "cartp" src="Images/Pictures/cart.png" alt="cart"></button>
 
 <footer>
     <?php include ('Footer.php') ?>
 </footer>
+
 
 
 </body>
