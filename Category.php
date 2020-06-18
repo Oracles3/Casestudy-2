@@ -14,7 +14,7 @@
 </div>
 
 <!-- Nav link -->
-<div class="container">
+<div class="contain">
     <div class="nav-wrapper">
         <div class="left">
             <div class="nav-link">
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-
+<!-- Category coding -->
 <div class="portfolio-wrapper">
     <div class="portfolio-img-background" style="background-image: url('Images/Pictures/dog 2.jpg')" >
         <div class="img-text-wrapper">
@@ -92,7 +92,7 @@
     </div>
 </div>
 
-
+<!-- Footer Coding -->
 <?php include ('Footer.php') ?>
 
 

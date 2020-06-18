@@ -13,7 +13,7 @@
 </div>
 
 <!-- Nav link -->
-<div class="container">
+<div class="contain">
     <div class="nav-wrapper">
         <div class="left">
             <div class="nav-link">
@@ -45,11 +45,11 @@
     </div>
 </div>
 
-
+    <!-- Explains what the sites about -->
 <?php
 echo "<h1>This is a online website which provides animal food products with easy access</h1>";
 ?>
-
+<!-- Slide show coding -->
     <img class = "slideshow" name = "slide" alt="Slide">
 
 <!-- Footer Coding -->

@@ -6,7 +6,7 @@ body {
     flex-direction: column;
 }
 
-.container {
+.contain {
     display: grid;
     grid-template-columns: 1fr;
 }

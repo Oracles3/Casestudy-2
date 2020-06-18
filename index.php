@@ -15,7 +15,7 @@
 </div>
 
 <!-- Nav link -->
-<div class="container">
+<div class="contain">
     <div class="nav-wrapper">
         <div class="left">
             <div class="nav-link active-nav-link">
@@ -53,19 +53,19 @@
 
 <!-- The body which contains images of aninamls which link to their pages -->
         <a href="Aboutus.php">
-        <div class="portfolio-wrapper">
-            <div class="portfolio-img-background" style="background-image: url('Images/Pictures/Dog.jpg')" >
+            <div class="portfolio-wrapper">
+                <div class="portfolio-img-background" style="background-image: url('Images/Pictures/Dog.jpg')" >
 
-                <div class="img-text-wrapper">
+                    <div class="img-text-wrapper">
 
-                    <div class="subtitle">
-                        <div class="shop">
-                        About Us
+                        <div class="subtitle">
+                            <div class="shop">
+                                About Us
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </a>
 
         <a href="Category.php">
@@ -81,33 +81,33 @@
             </div>
         </a>
     </div>
+</div>
+
+<a href="Product.php">
+    <div class="portfolio-wrapper">
+        <div class="portfolio-img-background" style="background-image: url('Images/Pictures/rabbit.jpg')">
+
+            <div class="img-text-wrapper" style="height: 100%">
+                <div class="subtitle">
+                    Products
+                </div>
+            </div>
+        </div>
     </div>
+</a>
 
-    <a href="Product.php">
-        <div class="portfolio-wrapper">
-            <div class="portfolio-img-background" style="background-image: url('Images/Pictures/rabbit.jpg')">
+<a href="Invoice.php">
+    <div class="portfolio-wrapper">
+        <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat.jpg')">
 
-                <div class="img-text-wrapper" style="height: 100%">
-                    <div class="subtitle">
-                        Products
-                    </div>
+            <div class="img-text-wrapper">
+                <div class="subtitle">
+                    Invoice
                 </div>
             </div>
         </div>
-    </a>
-
-    <a href="Invoice.php">
-        <div class="portfolio-wrapper">
-            <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat.jpg')">
-
-                <div class="img-text-wrapper">
-                    <div class="subtitle">
-                        Invoice
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
+    </div>
+</a>
 
 <!-- Footer Coding -->
 <?php include ('Footer.php') ?>
