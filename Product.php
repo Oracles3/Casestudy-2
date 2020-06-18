@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $database_name = "md5o42h5gjgc4hwo";
+    $database_name = "Product_details";
     $host = "c584md9egjnm02sk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
     $user = "i72ti2h0ftdurfnv";
     $password = "rgzhji46xu03zk51";
@@ -59,117 +59,67 @@
         </div>
     </div>
 
-    <!-- Cart Coding -->
-    <button onclick="openCart()" class = "cart"><img class = "cartp" src="Images/Pictures/cart.png" alt="Cart"></button>
-
-
-    <<!-- Pet food product coding -->
-    <table class="productHolder">
-        <tr class="tr">
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/dog%20food1.png" alt="Dog Food">
-                <div class="add">
-                    <p class = "atc">$30 - Pedigree</p>
-                    <button id = "dog1" class="atcb1" onclick="addProductToCart(this.id)">+</button>
-                </div>
-            </td>
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/dog food2.png" alt="Dog Food">
-                <div class="add">
-                    <p class = "atc">$30 - Family Dog</p>
-                    <button id = "dog2" class="atcb2" onclick="addProductToCart(this.id)">+</button>
-                </div>
-            </td>
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/cat food1.png" alt="Cat Food">
-                <div class="add">
-                    <p class = "atc">$30 - Hills</p>
-                    <button class="atcb3" id = "cat1" onclick="addProductToCart(this.id)">+</button>
-                </div>
-            </td>
-        </tr>
-        <tr class="tr">
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/cat food2.png" alt="Cat Food">
-                <div class="add">
-                    <p class = "atc">$30 - Purina</p>
-                    <button id = "cat2" onclick="addProductToCart(this.id)" class="atcb4">+</button>
-                </div>
-            </td>
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/bird food1.png" alt="Bird Food">
-                <div class="add">
-                    <p class = "atc">$30 -  Vita Pet</p>
-                    <button id = "bird1" onclick="addProductToCart(this.id)" class="atcb5">+</button>
-                </div>
-            </td>
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/bird food2.png" alt="Bird Food">
-                <div class="add">
-                    <p class = "atc">$30 - Energy Pellets</p>
-                    <button id = "bird2" onclick="addProductToCart(this.id)" class="atcb6">+</button>
-                </div>
-            </td>
-        </tr>
-        <tr class="tr">
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/rabbit food1.png" alt="Rabbit Food">
-                <div class="add">
-                    <p class = "atc">$30 - Value</p>
-                    <button id = "rabbit1" onclick="addProductToCart(this.id)" class="atcb7">+</button>
-                </div>
-            </td>
-            <td class="pb">
-                <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/rabbit food2.png" alt="Rabbit Food">
-                <div class="add">
-                    <p class = "atc">$30 - KayTee</p>
-                    <button id = "rabbit2" onclick="addProductToCart(this.id)" class="atcb8">+</button>
-                </div>
-    </table>
-</div>
-
 <!-- Cart Coding -->
-    <div style="clear: both"></div>
-    <h3 class="title2">Shopping Cart Details</h3>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <tr>
-                <th width="30%">Product Name</th>
-                <th width="10%">Quantity</th>
-                <th width="13%">Price Details</th>
-                <th width="10%">Total Price</th>
-                <th width="17%">Remove Item</th>
-            </tr>
+        <?php
+        $query = "SELECT * FROM product ORDER BY id ASC ";
+        $result = mysqli_query($con,$query);
+        if(mysqli_num_rows($result) > 0) {
 
-            <?php
+            while ($row = mysqli_fetch_array($result)) {
+
+                ?>
+                <div class="col-md-3">
+
+                    <form method="post" action="Product.php?action=add&id=<?php echo $row["id"]; ?>">
+
+                        <div class="product">
+                            <img src="<?php echo $row["image"]; ?>" class="img-responsive">
+                            <h5 class="text-info"><?php echo $row["pname"]; ?></h5>
+                            <h5 class="text-danger"><?php echo $row["price"]; ?></h5>
+                            <input type="text" name="quantity" class="form-control" value="1">
+                            <input type="hidden" name="hidden_name" value="<?php echo $row["pname"]; ?>">
+                            <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>">
+                            <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success"
+                                   value="Add to Cart">
+                        </div>
+                    </form>
+                </div>
+                <?php
+            }
+        }
+        ?>
+
+        <div style="clear: both"></div>
+        <h3 class="title2">Shopping Cart Details</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th width="30%">Product Name</th>
+                    <th width="10%">Quantity</th>
+                    <th width="13%">Price Details</th>
+                    <th width="10%">Total Price</th>
+                    <th width="17%">Remove Item</th>
+                </tr>
+
+                <?php
                 if(!empty($_SESSION["cart"])){
                     $total = 0;
-                    foreach ($_SESSION["cart"] as $key => $value){
+                    foreach ($_SESSION["cart"] as $key => $value) {
                         ?>
+                        <tr>
+                            <td><?php echo $value["item_name"]; ?></td>
+                            <td><?php echo $value["item_quantity"]; ?></td>
+                            <td>$ <?php echo $value["product_price"]; ?></td>
+                            <td>
+                                $ <?php echo number_format($value["item_quantity"] * $value["product_price"], 2); ?></td>
+                            <td><a href="Product.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span
+                                        class="text-danger">Remove Item</span></a></td>
 
-            <tr>
-                <td><?php echo $value["item_name"]; ?></td>
-                <td><?php echo $value["item_quantity"]; ?></td>
-                <td>$ <?php echo $value["product_price"]; ?></td>
-                <td>
-                    $ <?php echo number_format($value["item_quantity"] * $value["product_price"], 2); ?></td>
-                <td><a href="Product.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span
-                            class="text-danger">Remove Item</span></a></td>
-            </tr>
-
+                        </tr>
                         <?php
                         $total = $total + ($value["item_quantity"] * $value["product_price"]);
                     }
-            ?>
-
+                    ?>
                     <tr>
                         <td colspan="3" align="right">Total</td>
                         <th align="right">$ <?php echo number_format($total, 2); ?></th>
@@ -177,7 +127,11 @@
                     </tr>
                     <?php
                 }
-            ?>
+                ?>
+            </table>
+        </div>
+
+    </div>
 
 
 <!-- Footer Coding -->
