@@ -183,6 +183,7 @@ h1 {
     text-align: center;
 }
 
+/*Login Styling*/
 .log{
     width: 40%;
     margin-left: 40%;
@@ -232,7 +233,7 @@ h1 {
     position: absolute;
     top: 18%;
     left: 40%;
-    color: #FFC300;
+    color: blue;
 }
 .login1logotext{
     font-family: Lato, sans-serif;
@@ -241,7 +242,7 @@ h1 {
     position: absolute;
     top: 18%;
     left: 45%;
-    color: #FFC300;
+    color: blue;
 }
 .logbutton1{
     width: 20.5%;

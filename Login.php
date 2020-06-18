@@ -22,25 +22,20 @@
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">Dogs</a>
+                <a href="Aboutus.php">About Us</a>
             </div>
 
             <div class="nav-link">
-                <a href="Category.php">Birds</a>
+                <a href="Category.php">Category</a>
             </div>
 
             <div class="nav-link">
-                <a href="Product.php">Rabbits</a>
+                <a href="Product.php">Product</a>
             </div>
 
             <div class="nav-link active-nav-link">
-                <a href="Login.php">Cats</a>
+                <a href="Login.php">Login</a>
             </div>
-
-            <div class="nav-link">
-                <a href="cart.html">Cart</a>
-            </div>
-        </div>
 
         <!-- Brand Logo with the shops name -->
         <div class="right">
@@ -52,24 +47,27 @@
     </div>
 </div>
 
+<<!-- Cat product coding -->
 <body>
-
-<p class = "loginlogotext">Create Acount</p>
-<form action = "createdb.php" method = "post" class = "log">
-    <p class = "loginform">Name:</p>
-    <input type = "text" name = "createname" class = "input">
+<p class = "login1logotext">Login</p>
+<form action = "login.php" method = "post" class = "log">
     <p class = "loginform">Username:</p>
-    <input type = "text" name = "createusername" class = "input">
-    <p class = "loginform">Email:</p>
-    <input type="text" name = "createemail" class = "input">
+    <input type = "text" name = "username" class = "input">
     <p class = "loginform">Password:</p>
-    <input type="password" name = "createpwd" class = "input">
-    <p class = "loginform"><button class = "logbutton" value = "insert">Create Account</button></p>
+    <input type="password" name = "pwd" class = "input">
+    <p class = "loginform"><button class = "logbutton">Login</button></p>
 </form>
+<a href = "createaccount.php"><p class = "loginform"><button class = "logbutton1">Create Account</button></p></a>
 </body>
 
 
+
 <!-- http://herokugitphpleisong.herokuapp.com/phpMyAdminStephan/index.php?lang=en -->
+
+
+<footer>
+    <?php include ('Footer.php') ?>
+</footer>
 
 
 </body>

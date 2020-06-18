@@ -35,7 +35,7 @@
             </div>
 
             <div class="nav-link">
-                <a href="Invoice.php">Invoice</a>
+                <a href="Login.php">Invoice</a>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
     </div>
 </a>
 
-<a href="Invoice.php">
+<a href="Login.php">
     <div class="portfolio-wrapper">
         <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat.jpg')">
 

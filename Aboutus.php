@@ -33,7 +33,7 @@
             </div>
 
             <div class="nav-link">
-                <a href="Invoice.php">Invoice</a>
+                <a href="Login.php">Invoice</a>
             </div>
 
         <!-- Brand Logo with the shops name -->
