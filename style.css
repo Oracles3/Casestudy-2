@@ -182,3 +182,77 @@ h1 {
 .Subtile {
     text-align: center;
 }
+
+.log{
+    width: 40%;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+.loginform{
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.input{
+    width: 50%;
+    border-radius: 5px;
+    height: 30px;
+}
+.lbg{
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.logbutton{
+    width: 51.5%;
+    color: whitesmoke;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 4%;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    height: 60px;
+}
+.loginlogo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 5%;
+    left: 46%;
+}
+.loginlogotext{
+    font-family: Lato, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    color: #FFC300;
+}
+.login1logotext{
+    font-family: Lato, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    color: #FFC300;
+}
+.logbutton1{
+    width: 20.5%;
+    margin-left: 40%;
+    margin-top: -10%;
+    color: whitesmoke;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+    font-family: Lato, sans-serif;
+    height: 60px;
+}

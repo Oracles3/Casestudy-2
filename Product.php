@@ -76,19 +76,19 @@ if (isset($_GET["action"])){
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">Dogs</a>
+                <a href="Aboutus.php">About</a>
             </div>
 
             <div class="nav-link">
-                <a href="Category.php">Birds</a>
+                <a href="Category.php">Category</a>
             </div>
 
             <div class="nav-link active-nav-link">
-                <a href="Product.php">Rabbits</a>
+                <a href="Product.php">Product</a>
             </div>
 
             <div class="nav-link ">
-                <a href="Invoice.php">Cats</a>
+                <a href="Invoice.php">Login</a>
             </div>
 
             <!-- Brand Logo with the shops name -->
