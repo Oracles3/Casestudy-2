@@ -6,6 +6,10 @@ body {
     flex-direction: column;
 }
 
+.contain {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 /* Nav Styles */
 .nav-wrapper{
@@ -137,11 +141,11 @@ footer {
 
 /* Product Style */
 .product{
-    border: 1px solid blue;
+    border: 1px solid #eaeaec;
     margin: -1px 19px 3px -1px;
     padding: 10px;
     text-align: center;
-    background-color: blue;
+    background-color: #efefef;
 }
 table, th, tr{
     text-align: center;
@@ -149,17 +153,17 @@ table, th, tr{
 .title2{
     text-align: center;
     color: #66afe9;
-    background-color: blue
+    background-color: #efefef;
     padding: 2%;
 }
 h2{
     text-align: center;
-    color: blue;
-    background-color: blue;
+    color: #66afe9;
+    background-color: #efefef;
     padding: 2%;
 }
 table th{
-    background-color: blue;
+    background-color: #efefef;
 }
 
 /*Text Styling*/
