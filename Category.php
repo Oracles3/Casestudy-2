@@ -47,6 +47,7 @@
 </div>
 
 <!-- Category coding -->
+<a href="Product.php">
 <div class="portfolio-wrapper">
     <div class="portfolio-img-background" style="background-image: url('Images/Pictures/dog 2.jpg')" >
         <div class="img-text-wrapper">
@@ -59,7 +60,7 @@
     </div>
 </div>
 
-
+    <a href="Product.php">
 <div class="portfolio-wrapper">
     <div class="portfolio-img-background" style="background-image: url('Images/Pictures/cat 2.jpg')">
         <div class="img-text-wrapper">
@@ -70,7 +71,7 @@
     </div>
 </div>
 
-
+        <a href="Product.php">
 <div class="portfolio-wrapper">
     <div class="portfolio-img-background" style="background-image: url('Images/Pictures/bird 2.jpg')">
         <div class="img-text-wrapper" style="height: 100%">
@@ -81,7 +82,7 @@
     </div>
 </div>
 
-
+            <a href="Product.php">
 <div class="portfolio-wrapper">
     <div class="portfolio-img-background" style="background-image: url('Images/Pictures/rabbit 2.jpg')">
         <div class="img-text-wrapper">
