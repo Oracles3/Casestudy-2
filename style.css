@@ -6,10 +6,6 @@ body {
     flex-direction: column;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 /* Nav Styles */
 .nav-wrapper{
