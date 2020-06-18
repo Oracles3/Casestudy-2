@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    $database_name = "md5o42h5gjgc4hwo";
+    $host = "c584md9egjnm02sk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $user = "i72ti2h0ftdurfnv";
+    $password = "rgzhji46xu03zk51";
+    $database = "md5o42h5gjgc4hwo";
+
+    $con = new mysqli($host,$user,$password,$database );
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,19 +35,19 @@
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">About Us</a>
+                <a href="Aboutus.php">Dogs</a>
             </div>
 
             <div class="nav-link">
-                <a href="Category.php">Category</a>
+                <a href="Category.php">Birds</a>
             </div>
 
             <div class="nav-link active-nav-link">
-                <a href="Product.php">Product</a>
+                <a href="Product.php">Rabbits</a>
             </div>
 
             <div class="nav-link ">
-                <a href="Invoice.php">Invoice</a>
+                <a href="Invoice.php">Cats</a>
             </div>
 
             <!-- Brand Logo with the shops name -->
@@ -46,7 +59,11 @@
         </div>
     </div>
 
-    <<!-- Rabbit product coding -->
+    <!-- Cart Coding -->
+    <button onclick="openCart()" class = "cart"><img class = "cartp" src="Images/Pictures/cart.png" alt="Cart"></button>
+
+
+    <<!-- Pet food product coding -->
     <table class="productHolder">
         <tr class="tr">
             <td class="pb">
@@ -77,7 +94,7 @@
         <tr class="tr">
             <td class="pb">
                 <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/cat food2.png" alt="cat food">
+                <img class = "pimage" src="Images/Pictures/cat food2.png" alt="Cat Food">
                 <div class="add">
                     <p class = "atc">$30 - Purina</p>
                     <button id = "cat2" onclick="addProductToCart(this.id)" class="atcb4">+</button>
@@ -85,7 +102,7 @@
             </td>
             <td class="pb">
                 <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/bird food1.png" alt="bird food">
+                <img class = "pimage" src="Images/Pictures/bird food1.png" alt="Bird Food">
                 <div class="add">
                     <p class = "atc">$30 -  Vita Pet</p>
                     <button id = "bird1" onclick="addProductToCart(this.id)" class="atcb5">+</button>
@@ -93,7 +110,7 @@
             </td>
             <td class="pb">
                 <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/bird food2.png" alt="bird food">
+                <img class = "pimage" src="Images/Pictures/bird food2.png" alt="Bird Food">
                 <div class="add">
                     <p class = "atc">$30 - Energy Pellets</p>
                     <button id = "bird2" onclick="addProductToCart(this.id)" class="atcb6">+</button>
@@ -103,7 +120,7 @@
         <tr class="tr">
             <td class="pb">
                 <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/rabbit food1.png" alt="rabbit food">
+                <img class = "pimage" src="Images/Pictures/rabbit food1.png" alt="Rabbit Food">
                 <div class="add">
                     <p class = "atc">$30 - Value</p>
                     <button id = "rabbit1" onclick="addProductToCart(this.id)" class="atcb7">+</button>
@@ -111,7 +128,7 @@
             </td>
             <td class="pb">
                 <p class="pheader"></p>
-                <img class = "pimage" src="Images/Pictures/rabbit food2.png" alt="rabbit food">
+                <img class = "pimage" src="Images/Pictures/rabbit food2.png" alt="Rabbit Food">
                 <div class="add">
                     <p class = "atc">$30 - KayTee</p>
                     <button id = "rabbit2" onclick="addProductToCart(this.id)" class="atcb8">+</button>
@@ -119,28 +136,51 @@
     </table>
 </div>
 
+<!-- Cart Coding -->
+    <div style="clear: both"></div>
+    <h3 class="title2">Shopping Cart Details</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th width="30%">Product Name</th>
+                <th width="10%">Quantity</th>
+                <th width="13%">Price Details</th>
+                <th width="10%">Total Price</th>
+                <th width="17%">Remove Item</th>
+            </tr>
 
-<<div id="cartnav" class="cartnav">
-    <a href="javascript:void(0)" class="closecart" onclick="closeCart()">&times;</a>
-    <a href = "#">Your Cart</a>
-    <table class="cartTable" id = "cart1"></table>
-    <table class="cartTable" id = "cart2"></table>
-    <table class="cartTable" id = "cart3"></table>
-    <table class="cartTable" id = "cart4"></table>
-    <table class="cartTable" id = "cart5"></table>
-    <table class="cartTable" id = "cart6"></table>
-    <table class="cartTable" id = "cart7"></table>
-    <table class="cartTable" id = "cart8"></table>
-    <table class = "total">
-        <tr class="totalRow">
-            <td class="totalWriting">TOTAL:</td>
-            <td class="totalPrice" id = "total">$0.00</td>
-        </tr>
-    </table>
-</div>
+            <?php
+                if(!empty($_SESSION["cart"])){
+                    $total = 0;
+                    foreach ($_SESSION["cart"] as $key => $value){
+                        ?>
 
-<button onclick="openCart()" class = "cart"><img class = "cartp" src="Images/Pictures/cart.png" alt="cart"></button>
+            <tr>
+                <td><?php echo $value["item_name"]; ?></td>
+                <td><?php echo $value["item_quantity"]; ?></td>
+                <td>$ <?php echo $value["product_price"]; ?></td>
+                <td>
+                    $ <?php echo number_format($value["item_quantity"] * $value["product_price"], 2); ?></td>
+                <td><a href="Product.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span
+                            class="text-danger">Remove Item</span></a></td>
+            </tr>
 
+                        <?php
+                        $total = $total + ($value["item_quantity"] * $value["product_price"]);
+                    }
+            ?>
+
+                    <tr>
+                        <td colspan="3" align="right">Total</td>
+                        <th align="right">$ <?php echo number_format($total, 2); ?></th>
+                        <td></td>
+                    </tr>
+                    <?php
+                }
+            ?>
+
+
+<!-- Footer Coding -->
 <footer>
     <?php include ('Footer.php') ?>
 </footer>
