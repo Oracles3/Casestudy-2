@@ -137,11 +137,11 @@ footer {
 
 /* Product Style */
 .product{
-    border: 1px solid #eaeaec;
+    border: 1px solid blue;
     margin: -1px 19px 3px -1px;
     padding: 10px;
     text-align: center;
-    background-color: #efefef;
+    background-color: blue;
 }
 table, th, tr{
     text-align: center;
@@ -149,17 +149,17 @@ table, th, tr{
 .title2{
     text-align: center;
     color: #66afe9;
-    background-color: #efefef;
+    background-color: blue
     padding: 2%;
 }
 h2{
     text-align: center;
-    color: #66afe9;
-    background-color: #efefef;
+    color: blue;
+    background-color: blue;
     padding: 2%;
 }
 table th{
-    background-color: #efefef;
+    background-color: blue;
 }
 
 /*Text Styling*/
