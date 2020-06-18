@@ -22,25 +22,21 @@
             </div>
 
             <div class="nav-link">
-                <a href="Aboutus.php">Dogs</a>
+                <a href="Aboutus.php">About Us</a>
             </div>
 
             <div class="nav-link">
-                <a href="Category.php">Birds</a>
+                <a href="Category.php">Category</a>
             </div>
 
             <div class="nav-link">
-                <a href="Product.php">Rabbits</a>
+                <a href="Product.php">Product</a>
             </div>
 
             <div class="nav-link active-nav-link">
-                <a href="Login.php">Cats</a>
+                <a href="Login.php">Login</a>
             </div>
 
-            <div class="nav-link">
-                <a href="cart.html">Cart</a>
-            </div>
-        </div>
 
         <!-- Brand Logo with the shops name -->
         <div class="right">

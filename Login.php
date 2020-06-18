@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<<!-- Cat product coding -->
+<!-- Login coding -->
 <body>
 <p class = "login1logotext">Login</p>
 <form action = "login.php" method = "post" class = "log">
